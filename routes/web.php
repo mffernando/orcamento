@@ -14,3 +14,7 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+
+Route::get('/login', ['uses' => 'Controller@login']);
+Route::post('/login', ['as' => 'company.login', 'uses' => 'DashboardController@auth']);

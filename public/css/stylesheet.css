@@ -1,0 +1,259 @@
+/*global*/
+*{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	outline: none;
+	border: none;
+
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+		   -box-sizing: border-box;
+}
+
+/******************************************************************************************/
+
+/*stylesheet login page*/
+div.background{
+	position: absolute;
+	left: 0;
+	width: calc(100% - 300px);
+	height: 100%;
+	background: url(../assets/images/rio-negrinho.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size:contain;
+	background-image: cover;
+}
+
+/*content-view*/
+section#content-view{
+	position: absolute;
+	right: 0;
+	padding: 20px;
+	float: right;
+	width: 300px;
+	height: 100%;
+	background: #51dca6;
+}
+
+/*h1*/
+section#content-view h1{
+	float: left;
+	width: 100%;
+	margin-top: 50px;
+	font: 3em 'Fredoka One', cursive;
+	color: #f3f3f3;
+}
+
+/*h3*/
+section#content-view h3{
+	float: left;
+	width: 100%;
+	font: .8em 'Fredoka One', cursive;
+	color: #f3f3f3;
+}
+
+/*form*/
+section#content-view form{
+	float: left;
+	width: 100%;
+	margin-top: 40px;
+}
+
+/*p*/
+section#content-view form p{
+	float: left;
+	width: 100%;
+	font: .8em 'Fredoka One', cursive;
+	color: #f3f3f3;
+	font-size: 1.25em;
+}
+
+/*label*/
+section#content-view form label{
+	float: left;
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+/*label input*/
+section#content-view form input[type="submit"],
+section#content-view form label input{
+	float: left;
+	width: 100%;
+	height: 40px;
+	padding: 0 20px;
+	border-radius: 20px;
+	border: 2px solid black;
+	color: black;
+	font: 1em 'Arial', cursive;
+}
+
+/*button submit*/
+section#content-view form input[type="submit"]{
+	width: 60%;
+	float: right;
+	text-align: center;
+	background: #00ff9c;
+	color: #f9f9f9;
+	font: 1em 'Fredoka One', cursive;
+}
+
+/*body*/
+body{
+	background: #ececec;
+}
+
+/******************************************************************************************/
+/*stylesheet lateral menu*/
+
+#lateral-menu{
+	position: fixed;
+	float: left;
+	width: 220px;
+	height: 100%;
+	background: #fff;
+	z-index: 5;
+	border-right: #e9e9e9;
+	box-shadow: 0 0 15px rgba(0, 0, 0, .15);
+}
+
+/*ul li*/
+#lateral-menu ul,
+#lateral-menu ul li{
+	float: left;
+	width: 100%;
+}
+
+/*a*/
+#lateral-menu ul li a{
+	float: left;
+	width: 100%;
+	height: 80px;
+	color: black;
+	border-bottom: 	1px solid #e9e9e9;
+}
+
+/*i*/
+#lateral-menu ul li a i{
+	float: left;
+	width: 80px;
+	height: 80px;
+	color: inherit;
+	text-align: center;
+	line-height: 80px;
+	font-size: 2em;
+}
+
+/*h3*/
+#lateral-menu ul li a h3{
+	float: left;
+	height: 80px;
+	font: 1.25em/80px 'Fredoka One', cursive;
+	color: inherit;
+}
+
+/*a:hover*/
+#lateral-menu ul li a:hover{
+	float: left;
+	height: 80px;
+	font: 1.25em/80px 'Fredoka One', cursive;
+	color: #87CEEB;
+}
+
+/******************************************************************************************/
+/*stylesheet view-content*/
+
+#view-content{
+	position: fixed;
+	float: left;
+	width: 100%;
+	height: 100%;
+	padding: 20px 20px 20px 240px;
+	z-index: 1;
+}
+
+/*form*/
+form.standard-form{
+	float: left;
+	width: 100%;
+}
+
+/*label*/
+form.standard-form label{
+	float: left;
+	width: 49%;
+	height: 60px;
+	padding: 7px 15px;
+	border: 1px solid #e9e9e9;
+	background: #fff;
+	border-radius: 5px;
+	margin-bottom: 20px;
+}
+
+/*left margin label*/
+form.standard-form label:nth-last-of-type(odd){
+	margin-left: 2%;
+}
+
+/*span*/
+form.standard-form label span{
+	float: left;
+	width: 100%;
+	font: 400	.75em 'Arial';
+	background: transparent;
+}
+
+/*input*/
+form.standard-form label input{
+	float: left;
+	width: 100%;
+	color: #5c5c5c;
+	font: 400	1.25em 'Arial';
+	background: transparent;
+}
+
+/*submit*/
+form.standard-form label.submit{
+	background: #87CEEB;
+	border-color: #e9e9e9;
+}
+
+/*submit input*/
+form.standard-form label.submit input{
+	font-weight: 800;
+	text-transform: uppercase;
+	line-height: 50px;
+	color: #f9f9f9;
+}
+
+/******************************************************************************************/
+/*stylesheet default-table*/
+
+.default-table{
+	float: left;
+	width: 100%;
+	background: #fff;
+	border: 1px solid #e9e9e9;
+	padding: 10px;
+	font: 400 .9em 'Arial';
+	/*color: #5c5c5c;*/
+}
+
+/*table thead*/
+.default-table thead{
+	text-transform: uppercase;
+	font-size: .8em;
+	font-weight: 800;
+}
+
+/*table thead tr*/
+.default-table thead tr{
+	height: 40px;
+}
+
+/*table tbody tr*/
+.default-table tbody tr{
+	height: 20px;
+}

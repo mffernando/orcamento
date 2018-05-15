@@ -2,24 +2,18 @@
 
 namespace App\Entities;
 
-use Illuminate\Database\Eloquent\Model;
-use Prettus\Repository\Contracts\Transformable;
-use Prettus\Repository\Traits\TransformableTrait;
+use Illuminate\Notifications\Notifiable;
+use Illuminate\Database\Eloquent\SoftDeletes;
+use Illuminate\Foundation\Auth\Company as Authenticatable;
 
-/**
- * Class Company.
- *
- * @package namespace App\Entities;
- */
-class Company extends Model implements Transformable
+class Company extends Authenticatable
 {
-    use TransformableTrait;
+	use SoftDeletes;
+    use Notifiable;
 
-    /**
-     * The attributes that are mass assignable.
-     *
-     * @var array
-     */
-    protected $fillable = [];
+    public $timestamps = true;
+    protected $table = 'companies';
+    protected $fillable = ['cnpj','name','phone','mobile','address','email','password','status','permission'];
+    protected $hidden = ['password', 'remember_token'];
 
 }

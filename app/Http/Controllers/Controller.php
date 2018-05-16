@@ -13,7 +13,7 @@ class Controller extends BaseController
 
     public function login()
     {
-    	return view('company.login');
+    	return view('user.login');
     }
 
 }

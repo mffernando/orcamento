@@ -17,9 +17,9 @@
 div.background{
 	position: absolute;
 	left: 0;
-	width: calc(100% - 300px);
+	width: calc(100% - 325px);
 	height: 100%;
-	background: url(../assets/images/rio-negrinho.png);
+	background: url(../assets/images/rio-negrinho.jpg);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size:contain;
@@ -32,9 +32,9 @@ section#content-view{
 	right: 0;
 	padding: 20px;
 	float: right;
-	width: 300px;
+	width: 320px;
 	height: 100%;
-	background: #51dca6;
+	background: #006293;
 }
 
 /*h1*/
@@ -95,14 +95,14 @@ section#content-view form input[type="submit"]{
 	width: 60%;
 	float: right;
 	text-align: center;
-	background: #00ff9c;
+	background: #017048;
 	color: #f9f9f9;
 	font: 1em 'Fredoka One', cursive;
 }
 
 /*body*/
 body{
-	background: #ececec;
+	background: #f9f9f9;
 }
 
 /******************************************************************************************/

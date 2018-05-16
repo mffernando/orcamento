@@ -15,7 +15,7 @@
 		<h1>Orçamentos</h1>
 		<h3>Prefeitura de Rio Negrinho</h3>
 
-		{!! Form::open(['route' => 'company.login', 'method' => 'post']) !!}
+		{!! Form::open(['route' => 'user.login', 'method' => 'post']) !!}
 
 		<p>Acessar o Sistema:</p>
 

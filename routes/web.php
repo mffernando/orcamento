@@ -17,4 +17,5 @@ Route::get('/', function () {
 
 
 Route::get('/login', ['uses' => 'Controller@login']);
-Route::post('/login', ['as' => 'company.login', 'uses' => 'DashboardController@auth']);
+Route::post('/login', ['as' => 'user.login', 'uses' => 'DashboardController@auth']);
+Route::post('/dashboard', ['as' => 'user.dashboard', 'uses' => 'DashboardController@index']);

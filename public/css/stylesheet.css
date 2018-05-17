@@ -24,6 +24,7 @@ div.background{
 	background-position: center;
 	background-size:contain;
 	background-image: cover;
+	background-color: white;
 }
 
 /*content-view*/

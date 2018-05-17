@@ -3,27 +3,19 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-/**
- * Class CreateCompaniesTable.
- */
 class CreateCompaniesTable extends Migration
 {
-	/**
-	 * Run the migrations.
-	 *
-	 * @return void
-	 */
 	public function up()
 	{
 		Schema::create('companies', function(Blueprint $table) {
-            
-			//company data
+            $table->engine = "InnoDB";
             $table->increments('id');
+			//company data
             $table->char('cnpj', 14)->unique();
             $table->string('name', 50);
             $table->char('phone', 11);
             $table->char('mobile', 12)->nullable();
-            $table->string('address', 50)
+            $table->string('address', 50);
             
             //auth data
             $table->string('email', 80)->unique();
@@ -39,11 +31,6 @@ class CreateCompaniesTable extends Migration
 		});
 	}
 
-	/**
-	 * Reverse the migrations.
-	 *
-	 * @return void
-	 */
 	public function down()
 	{
 		Schema::table('companies', function(Blueprint $table){

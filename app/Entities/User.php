@@ -17,4 +17,10 @@ class User extends Authenticatable
     protected $fillable = ['name','email','password','status','permission'];
     protected $hidden = ['password', 'remember_token'];
 
+    //password crypt
+    public function setPasswordAttribute($value)
+    {
+      $this->attributes['password'] = env('PASSWORD_HASH') ? bcrypt($value) : $value;
+    }
+
 }

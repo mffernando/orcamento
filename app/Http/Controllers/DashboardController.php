@@ -40,10 +40,10 @@ class DashboardController extends Controller
       $user = $this->repository->findWhere(['email' => $request->get('username')])->first();
       //check e-mail
       if(!$user) //not authenticated
-        throw new Exception("Wrong E-mail!");
+        throw new Exception("E-mail inválido!");
       //check password
       if($user->password != $request->get('password'))
-        throw new Exception("Wrong Password!");
+        throw new Exception("Senha inválida!");
       //Auth
       Auth::login($user);
       }

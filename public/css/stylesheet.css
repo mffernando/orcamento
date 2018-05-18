@@ -112,7 +112,7 @@ body{
 #lateral-menu{
 	position: fixed;
 	float: left;
-	width: 220px;
+	width: 240px;
 	height: 100%;
 	background: #fff;
 	z-index: 5;
@@ -160,7 +160,7 @@ body{
 	float: left;
 	height: 80px;
 	font: 1.25em/80px 'Fredoka One', cursive;
-	color: #87CEEB;
+	color: #006293;
 }
 
 /******************************************************************************************/
